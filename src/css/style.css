@@ -2,7 +2,7 @@
     --white: #f7f7f7;
     --background: #D5E1Ef;
     --bold-text:#1F314F;
-    --normal-text: #68778D;
+    --normal-text: #434C5B;
 }
 
 body{
@@ -18,7 +18,7 @@ body{
 
 .widget{
     background-color: var(--white);
-    max-width: 80%;
+    max-width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,7 +44,7 @@ p{
     color: var(--normal-text);
     font-size: 1rem;
     text-align: center;
-    line-height: 1.5rem;
+    line-height: 1.5;
     margin: 1.375rem 0 0.5rem 0;
 }
 
@@ -84,10 +84,6 @@ p{
 }
 
 @media (min-width: 1024px){
-    .widget{
-        max-width: 50%;
-    }
-
     img{
         max-width: 98%;
     }
@@ -125,5 +121,29 @@ p{
 
     .attribution{
         font-size: 0.85rem;
+    }
+}
+
+@media (width: 1024px) and (height: 600px) {
+  .widget {
+    max-width: 25%;
+    max-height: 75%;
+  }
+
+  img{
+    width: 190px;
+  }
+
+    h1 {
+        font-size: 1.375rem;
+        margin: 1rem 0 1rem 0;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    .attribution{
+        font-size: 0.975rem;
     }
 }
