@@ -5,8 +5,13 @@
     --normal-text: #434C5B;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: var(--background);
+}
+
 main{
-    background-color: var(--background);
     font-family: 'Outfit', sans-serif;
     display: flex;
     flex-direction: column;
